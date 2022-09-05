@@ -1,0 +1,30 @@
+<view class="main">
+  <view class="title-wrap">
+    <image class="title-icon" mode="aspectFit" src="/assets/TDesignLogo@2x.png" />
+  </view>
+  <view class="desc"> TDesign 适配微信小程序的组件库 </view>
+
+  <view class="box remote-data">
+    <t-tag theme="primary" block>远程数据：{{name}} {{age}} {{phone}}</t-tag>
+  </view>
+
+  <pull-down-list
+    wx:for="{{news}}"
+    name="{{item.title}}"
+    wx:key="title"
+    bind:click="showNewsDetail"
+  />
+
+  <view class="box refresh-button">
+    <t-button theme="primary" block bind:tap="refreshData">刷新数据</t-button>
+  </view>
+
+  <pull-down-list
+    wx:for="{{list}}"
+    name="{{item.name}}"
+    icon="{{item.icon}}"
+    wx:key="name"
+    childArr="{{item.childArr}}"
+    bind:click="clickHandle"
+  />
+</view>
