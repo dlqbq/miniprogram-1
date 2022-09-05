@@ -1,7 +1,8 @@
 {
   "usingComponents": {
     "t-demo": "../../components/demo-block/index",
-    "pull-down-list": "../../components/pull-down-list/index"
+    "pull-down-list": "../../components/pull-down-list/index",
+    "news-list": "../../components/news-list/index"
   },
   "navigationBarTitleText": "TDesign UI",
   "navigationBarBackgroundColor": "#f6f6f6",
